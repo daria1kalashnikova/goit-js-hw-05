@@ -1,3 +1,8 @@
+const getTotalBalanceByGender = (users, gender) =>
+  users
+    .filter((el) => el.gender === gender)
+    .reduce((total, el) => total + el.balance, 0);
+
 const clients = [
   {
     name: "Moore Hensley",
